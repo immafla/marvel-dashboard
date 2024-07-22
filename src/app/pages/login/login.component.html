@@ -1,0 +1,28 @@
+
+
+<app-card-login />
+
+
+
+
+
+
+<div class="fixed left-0 top-0 -z-10 aspect-video h-[100vh] w-screen bg-black" id="bg-video"> 
+    <video onloadedmetadata="this.muted=true"
+        autoplay loop
+        description="w"
+        subtitles=""
+        id="video-player" 
+        playsinline="" 
+        src="intro.mp4"
+        class="aspect-video size-full overflow-hidden object-cover opacity-0 transition-opacity duration-500 opacity-5" 
+        style="
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0));
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0));
+        background-color: black;
+    "
+        > 
+        <!-- oncanplay="this.classList.add('opacity-70')"  -->
+        <source type="video/mp4" src="intro.mp4"> 
+    </video> 
+</div>
