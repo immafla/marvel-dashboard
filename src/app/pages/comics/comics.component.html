@@ -1,1 +1,5 @@
-<p>comics works!</p>
+<div class="flex flex-row flex-wrap p-3">
+    @for (itemComic of comics; track itemComic.id) {
+        <app-card-comic [itemComic]="itemComic"></app-card-comic>
+    }
+</div>
